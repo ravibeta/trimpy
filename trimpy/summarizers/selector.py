@@ -12,7 +12,7 @@ class Selector(Summarizer):
         counts = self.build_counts(text)
         closest = self.test_find_closest(text, counts)
         print(repr(closest))
-        pass
+        return closest
 
     def build_counts(self, text):
         h = {}
@@ -39,13 +39,6 @@ class Selector(Summarizer):
         print('sorted_scores='+repr(sorted_scores))
         candidates = [lines[x[0]] for x in sorted_scores[0:3]]
         return candidates
-
-
-    def get_text(self):
-        with open('filename', 'r') as fin:
-             text = fin.readlines()
-        text = '\n'.join(text)
-        return text
 
     def test_build_counts(self, text):
         counts = self.build_counts(text)
