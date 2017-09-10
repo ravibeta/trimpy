@@ -67,6 +67,8 @@ You can check the latest sources from our github repository
 use the command:
 
     git clone https://github.com/ravibeta/trimpy.git
+    
+This is merely a proof of concept and open-source so we can use it or modify it in any way.
 
 Contributing
 ------------
